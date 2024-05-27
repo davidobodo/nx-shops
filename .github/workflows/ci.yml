@@ -32,4 +32,4 @@ jobs:
             node_modules
             ~/.cache/Cypress
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml')}}
-      - run: pnpm nx build cart
+      - run: pnpm nx affected -t build
